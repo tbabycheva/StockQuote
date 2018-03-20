@@ -11,8 +11,11 @@ import Foundation
 struct Stock {
     
     let symbol: String
+    var quote: Double?
     
-    init(symbol: String) {
+    init(symbol: String, quote: Double? = nil) {
+        
         self.symbol = symbol
+        self.quote = quote
     }
 }
