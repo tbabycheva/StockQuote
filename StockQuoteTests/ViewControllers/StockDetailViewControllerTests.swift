@@ -34,4 +34,8 @@ class StockDetailViewControllerTests: XCTestCase {
     func test_HasLowLabel() {
         XCTAssertNotNil(sut.lowLabel)
     }
+    
+    func test_HasVolumeLabel() {
+        XCTAssertNotNil(sut.volumeLabel)
+    }
 }
