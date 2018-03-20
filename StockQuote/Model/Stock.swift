@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct Stock {
+struct Stock: Equatable {
+    
+    private let symbolKey = "symbol"
+    private let quoteKey = "latestPrice"
     
     let symbol: String
     var quote: Double?
@@ -24,4 +27,24 @@ struct Stock {
         self.low = low
         self.volume = volume
     }
+    
+    init?(stockDictionary: [String:Any]) {
+        
+        guard let quoteDictionary = stockDictionary["quote"] as? [String:Any],
+            let symbol = quoteDictionary[symbolKey] as? String,
+            let quote = quoteDictionary[quoteKey] as? Double
+            else { return nil }
+        
+        self.symbol = symbol
+        self.quote = quote
+    }
 }
+
+func == (lhs: Stock, rhs: Stock) -> Bool {
+    
+    if lhs.symbol != rhs.symbol {
+        return false
+    }
+    return true
+}
+

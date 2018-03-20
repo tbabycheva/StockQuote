@@ -15,6 +15,8 @@
 		21565DAF206082D000CA27FF /* StockQuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DAE206082D000CA27FF /* StockQuoteUITests.swift */; };
 		21565DBD2060887300CA27FF /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DBC2060887300CA27FF /* Stock.swift */; };
 		21565DBF2060888300CA27FF /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DBE2060888300CA27FF /* StockTests.swift */; };
+		21565DC3206091F200CA27FF /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DC2206091F200CA27FF /* StockController.swift */; };
+		21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DC42060920500CA27FF /* StockControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		21565DB0206082D000CA27FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21565DBC2060887300CA27FF /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		21565DBE2060888300CA27FF /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
+		21565DC2206091F200CA27FF /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
+		21565DC42060920500CA27FF /* StockControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			children = (
 				21565D8E206082D000CA27FF /* AppDelegate.swift */,
 				21565DC02060888900CA27FF /* Model */,
+				21565DC62060922E00CA27FF /* ModelControllers */,
 				21565D90206082D000CA27FF /* ViewController.swift */,
 				21565DC1206088D300CA27FF /* UI */,
 				21565D95206082D000CA27FF /* Assets.xcassets */,
@@ -112,7 +117,8 @@
 		21565DA2206082D000CA27FF /* StockQuoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				21565DBE2060888300CA27FF /* StockTests.swift */,
+				21565DC72060924100CA27FF /* Model */,
+				21565DC82060924C00CA27FF /* ModelControllers */,
 				21565DA5206082D000CA27FF /* Info.plist */,
 			);
 			path = StockQuoteTests;
@@ -142,6 +148,30 @@
 				21565D92206082D000CA27FF /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		21565DC62060922E00CA27FF /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21565DC2206091F200CA27FF /* StockController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		21565DC72060924100CA27FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21565DBE2060888300CA27FF /* StockTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21565DC82060924C00CA27FF /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21565DC42060920500CA27FF /* StockControllerTests.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21565DC3206091F200CA27FF /* StockController.swift in Sources */,
 				21565D91206082D000CA27FF /* ViewController.swift in Sources */,
 				21565D8F206082D000CA27FF /* AppDelegate.swift in Sources */,
 				21565DBD2060887300CA27FF /* Stock.swift in Sources */,
@@ -288,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */,
 				21565DBF2060888300CA27FF /* StockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
