@@ -20,6 +20,8 @@
 		21565DD020609E4200CA27FF /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DCF20609E4200CA27FF /* StockListViewController.swift */; };
 		21565DD42060A15F00CA27FF /* StockListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD32060A15F00CA27FF /* StockListDataProvider.swift */; };
 		21565DD82060B71200CA27FF /* StockListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */; };
+		21565DDA2060D0C900CA27FF /* StockDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */; };
+		21565DDC2060D6AE00CA27FF /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		21565DCF20609E4200CA27FF /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
 		21565DD32060A15F00CA27FF /* StockListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProvider.swift; sourceTree = "<group>"; };
 		21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProviderTests.swift; sourceTree = "<group>"; };
+		21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 			children = (
 				21565DCF20609E4200CA27FF /* StockListViewController.swift */,
 				21565DD32060A15F00CA27FF /* StockListDataProvider.swift */,
+				21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,8 +198,9 @@
 		21565DCE20609DC300CA27FF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */,
 				21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */,
+				21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */,
+				21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21565DDC2060D6AE00CA27FF /* StockDetailViewController.swift in Sources */,
 				21565DD42060A15F00CA27FF /* StockListDataProvider.swift in Sources */,
 				21565DC3206091F200CA27FF /* StockController.swift in Sources */,
 				21565D8F206082D000CA27FF /* AppDelegate.swift in Sources */,
@@ -345,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21565DDA2060D0C900CA27FF /* StockDetailViewControllerTests.swift in Sources */,
 				21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */,
 				21565DCC20609DAA00CA27FF /* StockListViewControllerTests.swift in Sources */,
 				21565DD82060B71200CA27FF /* StockListDataProviderTests.swift in Sources */,

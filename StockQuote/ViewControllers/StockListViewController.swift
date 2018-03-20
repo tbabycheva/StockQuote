@@ -25,4 +25,5 @@ class StockListViewController: UIViewController {
         super.viewWillAppear(true)
         dataProvider.fetchData()
     }
+
 }
