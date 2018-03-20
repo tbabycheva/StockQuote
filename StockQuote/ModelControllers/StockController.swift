@@ -44,4 +44,35 @@ class StockController {
         }
         dataTask.resume()
     }
+    
+    func fetchStockDetails(for stock: Stock, completion: @escaping (Stock?) -> Void) {
+        
+        var localStock = stock
+        
+        let baseURL = URL(string: "https://api.iextrading.com/1.0/stock")
+        
+        let stockURL = baseURL?.appendingPathComponent(localStock.symbol.lowercased()).appendingPathComponent("chart").appendingPathComponent("1d")
+        guard let url = stockURL else { completion(nil); return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error)  in
+            
+            if let error = error {
+                print("\(error.localizedDescription)")
+                completion(nil)
+                return }
+            
+            guard let data = data,
+                let arrayOfStockDictionaries = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [[String : Any]],
+                let details = arrayOfStockDictionaries.last
+                else { completion(nil); return }
+            
+            localStock.update(with: details)
+            
+            completion(localStock)
+        }
+        dataTask.resume()
+    }
 }

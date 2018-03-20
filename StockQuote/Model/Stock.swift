@@ -12,6 +12,9 @@ struct Stock: Equatable {
     
     private let symbolKey = "symbol"
     private let quoteKey = "latestPrice"
+    private let highKey = "high"
+    private let lowKey = "low"
+    private let volumeKey = "volume"
     
     let symbol: String
     var quote: Double?
@@ -37,6 +40,18 @@ struct Stock: Equatable {
         
         self.symbol = symbol
         self.quote = quote
+    }
+    
+    mutating func update(with dictionary: [String:Any]) {
+        
+        guard let high = dictionary[highKey] as? Double,
+            let low = dictionary[lowKey] as? Double,
+            let volume = dictionary[volumeKey] as? Int
+            else { return }
+        
+        self.high = high
+        self.low = low
+        self.volume = volume
     }
 }
 
