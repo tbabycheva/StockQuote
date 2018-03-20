@@ -13,7 +13,7 @@ class StockListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return StockController.shared.stocks.count
     }
     
     func tableView(_ tableView: UITableView,

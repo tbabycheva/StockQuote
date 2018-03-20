@@ -19,6 +19,7 @@
 		21565DCC20609DAA00CA27FF /* StockListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */; };
 		21565DD020609E4200CA27FF /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DCF20609E4200CA27FF /* StockListViewController.swift */; };
 		21565DD42060A15F00CA27FF /* StockListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD32060A15F00CA27FF /* StockListDataProvider.swift */; };
+		21565DD82060B71200CA27FF /* StockListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewControllerTests.swift; sourceTree = "<group>"; };
 		21565DCF20609E4200CA27FF /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
 		21565DD32060A15F00CA27FF /* StockListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProvider.swift; sourceTree = "<group>"; };
+		21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		21565DCE20609DC300CA27FF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */,
 				21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */,
 			);
 			path = ViewControllers;
@@ -344,6 +347,7 @@
 			files = (
 				21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */,
 				21565DCC20609DAA00CA27FF /* StockListViewControllerTests.swift in Sources */,
+				21565DD82060B71200CA27FF /* StockListDataProviderTests.swift in Sources */,
 				21565DBF2060888300CA27FF /* StockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
