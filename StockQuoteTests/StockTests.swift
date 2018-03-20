@@ -38,4 +38,10 @@ class StockTests: XCTestCase {
         let stock = Stock(symbol: "", low: 150.00)
         XCTAssertEqual(stock.low, 150.00, "should set stock low")
     }
+    
+    func test_Init_WhenPassedStockVolume_SetsVolume() {
+        
+        let stock = Stock(symbol: "", volume: 7500)
+        XCTAssertEqual(stock.volume, 7500, "should set stock volume")
+    }
 }
