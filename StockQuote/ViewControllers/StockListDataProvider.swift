@@ -18,7 +18,13 @@ class StockListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath)
         
-        return UITableViewCell()
+        let stock = StockController.shared.stocks[indexPath.row]
+        
+        cell.textLabel?.text = stock.symbol
+        cell.detailTextLabel?.text = "\(stock.quote ?? 0)"
+        
+        return cell
     }
 }
