@@ -30,4 +30,8 @@ class StockDetailViewControllerTests: XCTestCase {
     func test_HasHighLabel() {
         XCTAssertNotNil(sut.highLabel)
     }
+    
+    func test_HasLowLabel() {
+        XCTAssertNotNil(sut.lowLabel)
+    }
 }

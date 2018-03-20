@@ -11,6 +11,7 @@ import UIKit
 class StockDetailViewController: UIViewController {
 
     @ IBOutlet var highLabel: UILabel!
+    @ IBOutlet var lowLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
