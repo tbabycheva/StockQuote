@@ -12,10 +12,12 @@ struct Stock {
     
     let symbol: String
     var quote: Double?
+    var high: Double?
     
-    init(symbol: String, quote: Double? = nil) {
+    init(symbol: String, quote: Double? = nil, high: Double? = nil) {
         
         self.symbol = symbol
         self.quote = quote
+        self.high = high
     }
 }

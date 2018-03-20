@@ -28,4 +28,9 @@ class StockTests: XCTestCase {
         let stock = Stock(symbol: "", quote: 178.65)
         XCTAssertEqual(stock.quote, 178.65, "should set stock quote")
     }
+    
+    func test_Init_WhenPassedStockHigh_SetsHigh() {
+        let stock = Stock(symbol: "", high: 180.00)
+        XCTAssertEqual(stock.high, 180.00, "should set stock high")
+    }
 }
