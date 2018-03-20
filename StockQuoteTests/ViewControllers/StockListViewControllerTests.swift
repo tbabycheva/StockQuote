@@ -31,4 +31,8 @@ class StockListViewControllerTests: XCTestCase {
     func test_TableView_AfteViewDidLoad_IsNotNil() {
         XCTAssertNotNil(sut.tableView)
     }
+    
+    func test_LoadingView_SetsTableViewDataSource() {
+        XCTAssertTrue(sut.tableView.dataSource is StockListDataProvider)
+    }
 }

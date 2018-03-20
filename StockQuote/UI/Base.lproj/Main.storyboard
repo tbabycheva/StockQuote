@@ -33,10 +33,12 @@
                         <viewLayoutGuide key="safeArea" id="RSZ-wd-RiR"/>
                     </view>
                     <connections>
+                        <outlet property="dataProvider" destination="rUD-LY-x0T" id="fxH-I3-Dl0"/>
                         <outlet property="tableView" destination="oXe-eO-1sC" id="it4-V0-uA7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usn-JS-g3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="rUD-LY-x0T" customClass="StockListDataProvider" customModule="StockQuote" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-50" y="89"/>
         </scene>

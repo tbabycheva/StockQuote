@@ -11,7 +11,9 @@ import UIKit
 class StockListViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var dataProvider: UITableViewDataSource!
     
     override func viewDidLoad() {
+        tableView.dataSource = dataProvider
     }
 }

@@ -18,6 +18,7 @@
 		21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DC42060920500CA27FF /* StockControllerTests.swift */; };
 		21565DCC20609DAA00CA27FF /* StockListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */; };
 		21565DD020609E4200CA27FF /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DCF20609E4200CA27FF /* StockListViewController.swift */; };
+		21565DD42060A15F00CA27FF /* StockListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD32060A15F00CA27FF /* StockListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		21565DC42060920500CA27FF /* StockControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockControllerTests.swift; sourceTree = "<group>"; };
 		21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewControllerTests.swift; sourceTree = "<group>"; };
 		21565DCF20609E4200CA27FF /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
+		21565DD32060A15F00CA27FF /* StockListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				21565DCF20609E4200CA27FF /* StockListViewController.swift */,
+				21565DD32060A15F00CA27FF /* StockListDataProvider.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21565DD42060A15F00CA27FF /* StockListDataProvider.swift in Sources */,
 				21565DC3206091F200CA27FF /* StockController.swift in Sources */,
 				21565D8F206082D000CA27FF /* AppDelegate.swift in Sources */,
 				21565DBD2060887300CA27FF /* Stock.swift in Sources */,
