@@ -35,4 +35,8 @@ class StockListViewControllerTests: XCTestCase {
     func test_LoadingView_SetsTableViewDataSource() {
         XCTAssertTrue(sut.tableView.dataSource is StockListDataProvider)
     }
+    
+    func test_LoadingView_SetsTableViewDelegate() {
+        XCTAssertTrue(sut.tableView.delegate is StockListDataProvider)
+    }
 }
