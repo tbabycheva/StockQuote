@@ -29,8 +29,6 @@ class StockListDataProviderTests: XCTestCase {
         sut = viewController as! StockListViewController
         _ = sut.view
         
-        dataProvider = sut.dataProvider as! StockListDataProvider
-        
         StockController.shared.stocks.append(contentsOf: mockStocks)
         
     }
@@ -42,13 +40,13 @@ class StockListDataProviderTests: XCTestCase {
     
     func test_NumberOfRows_IsStocksCount() {
         
-        let numberOfRows = dataProvider.tableView(sut.tableView, numberOfRowsInSection: 0)
+        let numberOfRows = sut.dataProvider.tableView(sut.tableView, numberOfRowsInSection: 0)
         XCTAssertEqual(numberOfRows, 3)
     }
     
     func test_CellForRowAt_ReturnsExpectedCell() {
         
-        let cell = dataProvider.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
+        let cell = sut.dataProvider.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
         
         let stock = StockController.shared.stocks[0]
         

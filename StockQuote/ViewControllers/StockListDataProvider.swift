@@ -9,7 +9,27 @@
 import UIKit
 
 class StockListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate {
-
+    
+    @IBOutlet weak var viewController: StockListViewController?
+    
+    // MARK: - Properties
+    
+    var stocks = [Stock]() {
+        didSet{
+            DispatchQueue.main.async {
+                self.viewController?.tableView.reloadData()
+            }
+        }
+    }
+    
+    func fetchData() {
+        StockController.shared.fetchStockBatch {
+            self.stocks = StockController.shared.stocks
+        }
+    }
+    
+    // MARK: - Table view data source
+    
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         

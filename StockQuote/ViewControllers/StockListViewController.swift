@@ -9,12 +9,20 @@
 import UIKit
 
 class StockListViewController: UIViewController {
-
+    
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var dataProvider: (UITableViewDataSource & UITableViewDelegate)!
+    @IBOutlet var dataProvider: StockListDataProvider!
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
+        dataProvider.fetchData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        dataProvider.fetchData()
     }
 }
