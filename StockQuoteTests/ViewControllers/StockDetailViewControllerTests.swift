@@ -50,4 +50,16 @@ class StockDetailViewControllerTests: XCTestCase {
         XCTAssertEqual(self.sut.lowLabel.text, "\(stock.low ?? 0)")
         XCTAssertEqual(self.sut.volumeLabel.text, "\(stock.volume ?? 0)")
     }
+    
+    func test_InvalidStock_ShowsZeroForDetails() {
+        
+        let stock = Stock(symbol: "", quote: nil, high: nil, low: nil, volume: nil)
+        
+        sut.stock = stock
+        sut.updateViews()
+        
+        XCTAssertEqual(self.sut.highLabel.text, "0.0")
+        XCTAssertEqual(self.sut.lowLabel.text, "0.0")
+        XCTAssertEqual(self.sut.volumeLabel.text, "0")
+    }
 }

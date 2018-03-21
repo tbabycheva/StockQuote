@@ -44,4 +44,11 @@ class StockTests: XCTestCase {
         let stock = Stock(symbol: "", volume: 7500)
         XCTAssertEqual(stock.volume, 7500, "should set stock volume")
     }
+    
+    func test_AllPropertiesAreSetCorrectly_ForAValidDictionary() {
+        let validDictionary: [String:Any] = ["quote":["symbol":"AAPL","latestPrice":175.24]]
+        let sut = Stock(stockDictionary: validDictionary)
+        XCTAssertEqual(sut?.symbol, "AAPL")
+        XCTAssertEqual(sut?.quote, 175.24)
+    }
 }

@@ -23,6 +23,7 @@
 		21565DDA2060D0C900CA27FF /* StockDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */; };
 		21565DDC2060D6AE00CA27FF /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */; };
 		21E3310E2061EF7600170026 /* SegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3310D2061EF7600170026 /* SegueTests.swift */; };
+		21E331102061F55F00170026 /* StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3310F2061F55F00170026 /* StoryboardTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		21E3310D2061EF7600170026 /* SegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueTests.swift; sourceTree = "<group>"; };
+		21E3310F2061F55F00170026 /* StoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				21565DCB20609DAA00CA27FF /* StockListViewControllerTests.swift */,
 				21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */,
 				21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */,
+				21E3310F2061F55F00170026 /* StoryboardTests.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E331102061F55F00170026 /* StoryboardTests.swift in Sources */,
 				21565DDA2060D0C900CA27FF /* StockDetailViewControllerTests.swift in Sources */,
 				21565DC52060920500CA27FF /* StockControllerTests.swift in Sources */,
 				21565DCC20609DAA00CA27FF /* StockListViewControllerTests.swift in Sources */,

@@ -39,10 +39,11 @@ class StockDetailViewController: UIViewController {
     
     func updateViews() {
         
-        guard isViewLoaded else { return }
+        guard isViewLoaded,
+            let stock = stock else { return }
         
-        self.highLabel.text = "\(stock?.high ?? 0)"
-        self.lowLabel.text = "\(stock?.low ?? 0)"
-        self.volumeLabel.text = "\(stock?.volume ?? 0)"
+        self.highLabel.text = "\(stock.high ?? 0)"
+        self.lowLabel.text = "\(stock.low ?? 0)"
+        self.volumeLabel.text = "\(stock.volume ?? 0)"
     }
 }
