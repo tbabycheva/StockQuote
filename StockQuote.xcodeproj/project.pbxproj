@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214B0C692061EBC7001E2FAB /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0C682061EBC7001E2FAB /* ListViewTests.swift */; };
 		21565D8F206082D000CA27FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565D8E206082D000CA27FF /* AppDelegate.swift */; };
 		21565D94206082D000CA27FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21565D92206082D000CA27FF /* Main.storyboard */; };
 		21565D96206082D000CA27FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21565D95206082D000CA27FF /* Assets.xcassets */; };
 		21565D99206082D000CA27FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21565D97206082D000CA27FF /* LaunchScreen.storyboard */; };
-		21565DAF206082D000CA27FF /* StockQuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DAE206082D000CA27FF /* StockQuoteUITests.swift */; };
 		21565DBD2060887300CA27FF /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DBC2060887300CA27FF /* Stock.swift */; };
 		21565DBF2060888300CA27FF /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DBE2060888300CA27FF /* StockTests.swift */; };
 		21565DC3206091F200CA27FF /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DC2206091F200CA27FF /* StockController.swift */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		214B0C682061EBC7001E2FAB /* ListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
 		21565D8B206082D000CA27FF /* StockQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21565D8E206082D000CA27FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21565D93206082D000CA27FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		21565D9F206082D000CA27FF /* StockQuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockQuoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21565DA5206082D000CA27FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21565DAA206082D000CA27FF /* StockQuoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockQuoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21565DAE206082D000CA27FF /* StockQuoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteUITests.swift; sourceTree = "<group>"; };
 		21565DB0206082D000CA27FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21565DBC2060887300CA27FF /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		21565DBE2060888300CA27FF /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		21565DAD206082D000CA27FF /* StockQuoteUITests */ = {
 			isa = PBXGroup;
 			children = (
-				21565DAE206082D000CA27FF /* StockQuoteUITests.swift */,
 				21565DB0206082D000CA27FF /* Info.plist */,
+				214B0C682061EBC7001E2FAB /* ListViewTests.swift */,
 			);
 			path = StockQuoteUITests;
 			sourceTree = "<group>";
@@ -282,6 +282,7 @@
 					};
 					21565DA9206082D000CA27FF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 21565D8A206082D000CA27FF;
 					};
@@ -364,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21565DAF206082D000CA27FF /* StockQuoteUITests.swift in Sources */,
+				214B0C692061EBC7001E2FAB /* ListViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,12 +579,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCS73R8992;
 				INFOPLIST_FILE = StockQuoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.babycheva.StockQuoteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = StockQuote;
@@ -594,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCS73R8992;
 				INFOPLIST_FILE = StockQuoteUITests/Info.plist;
