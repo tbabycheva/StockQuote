@@ -38,4 +38,16 @@ class StockDetailViewControllerTests: XCTestCase {
     func test_HasVolumeLabel() {
         XCTAssertNotNil(sut.volumeLabel)
     }
+    
+    func test_SettingStockDetails_SetsTextsToLabels() {
+      
+        let stock = Stock(symbol: "", quote: nil, high: 180.00, low: 150.00, volume: 7500)
+    
+        sut.stock = stock
+        sut.updateViews()
+        
+        XCTAssertEqual(self.sut.highLabel.text, "\(stock.high ?? 0)")
+        XCTAssertEqual(self.sut.lowLabel.text, "\(stock.low ?? 0)")
+        XCTAssertEqual(self.sut.volumeLabel.text, "\(stock.volume ?? 0)")
+    }
 }
