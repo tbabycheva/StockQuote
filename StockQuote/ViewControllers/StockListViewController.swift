@@ -25,5 +25,21 @@ class StockListViewController: UIViewController {
         super.viewWillAppear(true)
         dataProvider.fetchData()
     }
-
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toDetailVC" {
+            
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            let stock = StockController.shared.stocks[indexPath.row]
+            
+            let detailVC = segue.destination as? StockDetailViewController
+            
+            detailVC?.title = stock.symbol
+            detailVC?.stock = stock
+        }
+    }
 }
