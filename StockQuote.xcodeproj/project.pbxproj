@@ -22,6 +22,7 @@
 		21565DD82060B71200CA27FF /* StockListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */; };
 		21565DDA2060D0C900CA27FF /* StockDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */; };
 		21565DDC2060D6AE00CA27FF /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */; };
+		21E3310E2061EF7600170026 /* SegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3310D2061EF7600170026 /* SegueTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		21565DD72060B71200CA27FF /* StockListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataProviderTests.swift; sourceTree = "<group>"; };
 		21565DD92060D0C900CA27FF /* StockDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		21565DDB2060D6AE00CA27FF /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		21E3310D2061EF7600170026 /* SegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				21565DB0206082D000CA27FF /* Info.plist */,
 				214B0C682061EBC7001E2FAB /* ListViewTests.swift */,
+				21E3310D2061EF7600170026 /* SegueTests.swift */,
 			);
 			path = StockQuoteUITests;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214B0C692061EBC7001E2FAB /* ListViewTests.swift in Sources */,
+				21E3310E2061EF7600170026 /* SegueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

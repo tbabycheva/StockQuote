@@ -45,6 +45,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <segue destination="oNt-f7-zTC" kind="show" identifier="toDetailVC" id="ggM-f5-vjs"/>
                                         </connections>
@@ -142,6 +145,9 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="AoV-at-KZT" firstAttribute="leading" secondItem="ixb-dJ-CK8" secondAttribute="leading" constant="8" id="EZp-H5-Crd"/>
                             <constraint firstItem="AoV-at-KZT" firstAttribute="top" secondItem="ixb-dJ-CK8" secondAttribute="top" constant="8" id="tgm-uu-Ydk"/>
